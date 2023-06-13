@@ -48,5 +48,17 @@
     <ClCompile Include="prob54_re2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="prob55.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob56._re.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob56.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob56_re2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
