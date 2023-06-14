@@ -95,6 +95,7 @@ int main(void) {
 	return 0;
 }
 
+// 실패한 코드들
 void judgeBipartiteGraph1(int start) {
 	int set[20001];
 	queue<int> qu;

@@ -60,6 +60,8 @@ int main(void) {
 	return 0;
 }
 
+// 실패한 코드들
+
 int trustNum[10001];
 
 int getTrustNum_fail0(int cur) {
