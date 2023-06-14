@@ -119,3 +119,4 @@ void assignTrustNum(int cur) {
 	trustNum[cur] = result;
 }
 */
+

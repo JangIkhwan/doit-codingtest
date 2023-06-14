@@ -144,3 +144,4 @@ int maxPartyNum0() {
 	}
 	return ret;
 }
+

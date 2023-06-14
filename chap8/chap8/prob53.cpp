@@ -58,3 +58,4 @@ int main(void) {
 		cout << result[i] << " ";
 	}
 }
+

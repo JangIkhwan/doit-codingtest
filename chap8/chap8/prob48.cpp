@@ -151,3 +151,4 @@ void judgeBipartiteGraph0(int start) {
 	}
 	cout << "YES";
 }
+
