@@ -30,14 +30,14 @@ long long INF = LLONG_MAX; //
 
 int N, M;
 vector<Edge> graph;
-long long path[50]; //
+long long dists[50]; //
 bool belongToCycle[50];
 
 void bellmanFord(int s) {
 	for (int i = 0; i < N; i++) {
-		path[i] = INF;
+		dists[i] = INF;
 	}
-	path[s] = 0;
+	dists[s] = 0;
 	for (int i = 0; i < 2 * N; i++) {
 		for (Edge edge : graph) {
 			int start = edge.start;
@@ -47,8 +47,8 @@ void bellmanFord(int s) {
 				belongToCycle[end] = true;
 				continue;
 			}
-			if (path[start] != INF && path[end] > path[start] + cost) {
-				path[end] = path[start] + cost;
+			if (dists[start] != INF && dists[end] > dists[start] + cost) {
+				dists[end] = dists[start] + cost;
 				if (i >= N - 1) { 
 					belongToCycle[end] = true;
 				}
@@ -74,7 +74,7 @@ int main(void) {
 
 	bellmanFord(src);
 
-	if (path[dst] == INF) {
+	if (dists[dst] == INF) {
 		printf("gg\n");
 	}
 	else{
@@ -82,7 +82,7 @@ int main(void) {
 			printf("Gee\n");
 		}
 		else {
-			printf("%lld\n", -path[dst] + profit[src]); //
+			printf("%lld\n", -dists[dst] + profit[src]); //
 		}
 	}
 
