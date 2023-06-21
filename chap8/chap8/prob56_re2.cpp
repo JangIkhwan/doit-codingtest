@@ -57,25 +57,25 @@ using namespace std;
 
 int V, E;
 vector<pair<int, int>> graph[20001];
-int path[20001];
+int dists[20001];
 
 void dijkstra(int start) {
 	priority_queue <pair<int, int>> pq;
 	for (int i = 1; i <= V; i++) {
-		path[i] = INF;
+		dists[i] = INF;
 	}
-	path[start] = 0;
+	dists[start] = 0;
 	pq.push(make_pair(0, start));
 	while (!pq.empty()) {
 		int dist = -pq.top().first; // 음수화에 주의, first에 거리를 저장해야 효율적으로 계산 가능
 		int now = pq.top().second;
 		pq.pop();
-		if (path[now] < dist) continue;
+		if (dists[now] < dist) continue;
 		for (int i = 0; i < graph[now].size(); i++) { // 원소를 순회하는 for문을 사용하는 것과 차이가 날까? 
 			int next = graph[now][i].first;
 			int nextDistance = dist + graph[now][i].second;
-			if (nextDistance < path[next]) {
-				path[next] = nextDistance;
+			if (nextDistance < dists[next]) {
+				dists[next] = nextDistance;
 				pq.push(make_pair(-nextDistance, next)); 
 			}
 		}
@@ -98,11 +98,11 @@ int main(void) {
 	dijkstra(K);
 
 	for (int i = 1; i <= V; i++) {
-		if (path[i] == INF) {
+		if (dists[i] == INF) {
 			cout << "INF\n";
 		}
 		else {
-			cout << path[i] << "\n";
+			cout << dists[i] << "\n";
 		}
 	}
 

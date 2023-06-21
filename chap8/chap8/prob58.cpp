@@ -27,21 +27,21 @@ int INF = 987654321; // INF는 경로의 최대값보다 커야 함.
 
 int N, M;
 vector<Edge> graph;
-long long path[501]; // 언더플로우가 발생할 수 있기 때문에 long long을 사용해야 함.
+long long dists[501]; // 언더플로우가 발생할 수 있기 때문에 long long을 사용해야 함.
 
 bool bellmanFord(int start) {
 	bool hasNegCycle = false;
 	for (int i = 1; i <= N; i++) {
-		path[i] = INF;
+		dists[i] = INF;
 	}
-	path[start] = 0;
+	dists[start] = 0;
 	for (int i = 1; i <= N; i++) {
 		for (Edge edge : graph) {
 			int start = edge.start;
 			int end = edge.end;
 			int cost = edge.cost;
-			if (path[start] != INF && path[end] > path[start] + cost) {
-				path[end] = path[start] + cost;
+			if (dists[start] != INF && dists[end] > dists[start] + cost) {
+				dists[end] = dists[start] + cost;
 				if (i == N) hasNegCycle = true;
 			}
 		}
@@ -62,11 +62,11 @@ int main(void) {
 	}
 	else {
 		for (int i = 2; i <= N; i++) {
-			if (path[i] == INF) {
+			if (dists[i] == INF) {
 				printf("-1\n");
 			}
 			else {
-				printf("%d\n", path[i]);
+				printf("%d\n", dists[i]);
 			}
 		}
 	}
