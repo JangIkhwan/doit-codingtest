@@ -90,5 +90,11 @@
     <ClCompile Include="prob64_re.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="prob65.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob66.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
