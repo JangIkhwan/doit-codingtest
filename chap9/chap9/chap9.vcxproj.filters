@@ -18,7 +18,19 @@
     <ClCompile Include="prob67.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prob68_try1.cpp">
+    <ClCompile Include="prob69_try1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob69.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob70.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="segment_tree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob72.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="prob68.cpp">
