@@ -30,10 +30,13 @@
     <ClCompile Include="segment_tree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prob72.cpp">
+    <ClCompile Include="prob71.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="prob68.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob72.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
