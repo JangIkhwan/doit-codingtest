@@ -33,6 +33,15 @@
     <ClCompile Include="prob81.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="prob82_failed.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob84.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="prob81_review.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="prob82.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
